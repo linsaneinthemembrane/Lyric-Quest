@@ -117,12 +117,12 @@ class GeniusService {
   processLyrics(lyrics) {
     console.log('Processing lyrics...');
     
-    // Split lyrics into words while preserving line structure
+    // Split lyrics into lines
     const lines = lyrics.split('\n');
     const processedWords = [];
     let position = 0;
     
-    lines.forEach(line => {
+    lines.forEach((line, lineIndex) => {
       // Clean the line but preserve all words
       const lineWords = line
         .toLowerCase()
@@ -136,14 +136,23 @@ class GeniusService {
         processedWords.push({
           word,
           position,
-          id: `${word}-${position}` // Add unique ID for each instance
+          id: `${word}-${position}`,
+          lineNumber: lineIndex // Add line number to track line breaks
         });
         position++;
       });
+      
+      // Add a line break marker if this isn't the last line and the line has words
+      if (lineIndex < lines.length - 1 && lineWords.length > 0) {
+        processedWords.push({
+          isLineBreak: true,
+          position: position++,
+          id: `linebreak-${lineIndex}`
+        });
+      }
     });
 
     console.log('Total words found:', processedWords.length);
-    
     return processedWords;
   }
 
