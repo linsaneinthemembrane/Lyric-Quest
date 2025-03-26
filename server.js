@@ -4,19 +4,19 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const rateLimit = require('express-rate-limit');
 
-// Load environment variables
+// environment variables
 dotenv.config();
 
 const app = express();
 
-// Middleware
+// middleware
 app.use(cors());
 app.use(express.json());
 
-// Rate limiting
+// rate limiting
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100 // limit each IP to 100 requests per windowMs
+  max: 100 // 100 requests per windowMs limit
 });
 app.use(limiter);
 
@@ -32,7 +32,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/song-lyri
 const songsRouter = require('./routes/songs');
 app.use('/api/songs', songsRouter);
 
-// Error handling middleware
+// handling middleware error
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({
