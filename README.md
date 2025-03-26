@@ -2,6 +2,9 @@
 
 An interactive web application where users can play a word-finding game with song lyrics.
 
+### Demo Video
+[![Lyric Quest Demo](https://img.youtube.com/vi/Id3TuJiY6BU/maxresdefault.jpg)](https://youtu.be/Id3TuJiY6BU?feature=shared)
+
 ## Overview
 
 This project aims to create an engaging experience for music enthusiasts by leveraging song lyrics from a third-party API, caching them in MongoDB, and building a dynamic music word hunt.
