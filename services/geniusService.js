@@ -125,7 +125,7 @@ class GeniusService {
     lines.forEach((line, lineIndex) => {
       // Clean the line but preserve all words
       const lineWords = line
-        //.toLowerCase()
+        .toLowerCase()
         .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()\[\]"]/g, '') // Remove punctuation
         .trim()
         .split(/\s+/)
