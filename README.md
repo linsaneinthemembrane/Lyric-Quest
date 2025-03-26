@@ -6,6 +6,22 @@ An interactive web application where users can play a word-finding game with son
 
 This project aims to create an engaging experience for music enthusiasts by leveraging song lyrics from a third-party API, caching them in MongoDB, and providing a dynamic word-finding game.
 
+---
+
+## **Why I Built This Project**
+
+This is my **first JavaScript project**, and it was created as a way to learn and grow as a developer. My goals were to:
+
+- Gain hands-on experience with **Node.js** and **MongoDB**.
+- Understand how to interact with third-party APIs.
+- Build a full-stack web application from scratch.
+- Strengthen my skills in **React** for frontend development.
+- Learn how to manage state, handle asynchronous operations, and improve error handling.
+
+This project represents my journey into JavaScript development and showcases what I’ve learned so far.
+
+---
+
 ## Features
 
 - **Search and Display Song Lyrics**: Users can search for songs and view their lyrics.
