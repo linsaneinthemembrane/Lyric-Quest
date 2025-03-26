@@ -1,15 +1,39 @@
-# Song Lyric Quiz
+# Lyric Quest
 
 An interactive web application where users can play a word-finding game with song lyrics.
 
+## Overview
+
+This project aims to create an engaging experience for music enthusiasts by leveraging song lyrics from a third-party API, caching them in MongoDB, and providing a dynamic word-finding game.
+
 ## Features
 
-- Search and display song lyrics
-- Interactive word-finding game
-- Dynamic tile sizes based on word length
-- Real-time word recognition
-- Progress tracking
-- MongoDB integration for caching lyrics
+- **Search and Display Song Lyrics**: Users can search for songs and view their lyrics.
+- **Interactive Word-Finding Game**: Players find words within the lyrics, with real-time recognition and feedback.
+- **Dynamic Tile Sizes**: Word tiles are sized based on the length of the word for better readability.
+- **Progress Tracking**: Users can track their progress as they find more words.
+- **MongoDB Integration**: Lyrics are cached in MongoDB for efficient retrieval and reduced API calls.
+
+## Pipeline
+
+1. **API Integration**: The application uses a third-party API (e.g., Genius) to fetch song lyrics.
+2. **MongoDB Caching**: Lyrics are stored in a MongoDB database to reduce API calls and improve performance.
+3. **Frontend Interaction**: Users interact with the application through a React-based frontend, which handles the word-finding game logic.
+
+## Learning Experiences
+
+- **API Management**: Learned how to manage API keys securely and handle rate limits.
+- **MongoDB Integration**: Gained experience with MongoDB schema design and data caching strategies.
+- **Frontend Development**: Improved skills in React, including state management and component optimization.
+- **Error Handling**: Developed robust error handling for API calls and database operations.
+
+## Next Steps
+
+- **Enhance User Experience**: Implement features like user profiles, high scores, and social sharing.
+- **Expand API Integration**: Integrate additional music APIs for broader song coverage.
+- **Optimize Performance**: Further optimize MongoDB queries and API calls for better performance.
+- **Mobile App Development**: Develop a mobile app version for broader accessibility.
+- **AI-Powered Features**: Explore integrating AI for features like lyric analysis or song recommendations.
 
 ## Prerequisites
 
@@ -21,41 +45,43 @@ An interactive web application where users can play a word-finding game with son
 
 1. Clone the repository
 2. Install dependencies:
-   ```bash
-   npm install
-   ```
+
+```
+npm install
+```
 
 3. Create a `.env` file in the root directory with the following variables:
-   ```
-   PORT=5000
-   MONGODB_URI=mongodb://localhost:27017/song-lyric-quiz
-   NODE_ENV=development
-   GENIUS_ACCESS_TOKEN=your_access_token_here
-   GENIUS_CLIENT_ID=your_client_id_here
-   GENIUS_CLIENT_SECRET=your_client_secret_here
-   ```
 
+```
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/song-lyric-quiz
+NODE_ENV=development
+GENIUS_ACCESS_TOKEN=your_access_token_here
+GENIUS_CLIENT_ID=your_client_id_here
+GENIUS_CLIENT_SECRET=your_client_secret_here
+```
 4. Start MongoDB on your local machine
-
 5. Start the development server:
-   ```bash
-   npm run dev
-   ```
+
+```
+npm run dev
+```
 
 ## Project Structure
 
 ```
 song-lyric-quiz/
 ├── models/
-│   └── Song.js
+│ └── Song.js
 ├── routes/
-│   └── songs.js
+│ └── songs.js
 ├── services/
-│   └── geniusService.js
+│ └── geniusService.js
 ├── server.js
 ├── package.json
 └── .env
 ```
+
 
 ## API Endpoints
 
@@ -69,4 +95,4 @@ song-lyric-quiz/
 2. Create your feature branch
 3. Commit your changes
 4. Push to the branch
-5. Create a new Pull Request 
+5. Create a new Pull Request
