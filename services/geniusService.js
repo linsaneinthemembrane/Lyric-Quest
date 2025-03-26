@@ -125,7 +125,7 @@ class GeniusService {
     lines.forEach((line, lineIndex) => {
       // Clean the line but preserve all words
       const lineWords = line
-        .toLowerCase()
+        //.toLowerCase()
         .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()\[\]"]/g, '') // Remove punctuation
         .trim()
         .split(/\s+/)
@@ -156,11 +156,6 @@ class GeniusService {
     return processedWords;
   }
 
-  // Helper method to check if we need to refresh the access token
-  async checkAndRefreshToken() {
-    // You might want to implement token refresh logic here if needed
-    // For now, we'll just use the access token we have
-  }
 }
 
 module.exports = new GeniusService(); 
