@@ -3,7 +3,7 @@
 An interactive web application where users can play a word-finding game with song lyrics.
 
 ### Demo Video
-[![Lyric Quest Demo](https://img.youtube.com/vi/Id3TuJiY6BU/maxresdefault.jpg)](https://youtu.be/Id3TuJiY6BU?feature=shared)
+[![Lyric Quest Demo](https://img.youtube.com/vi/IVe_ju5THCs/maxresdefault.jpg)](https://youtu.be/IVe_ju5THCs?feature=shared)
 
 ## Overview
 
