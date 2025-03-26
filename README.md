@@ -4,7 +4,7 @@ An interactive web application where users can play a word-finding game with son
 
 ## Overview
 
-This project aims to create an engaging experience for music enthusiasts by leveraging song lyrics from a third-party API, caching them in MongoDB, and providing a dynamic music word hunt.
+This project aims to create an engaging experience for music enthusiasts by leveraging song lyrics from a third-party API, caching them in MongoDB, and building a dynamic music word hunt.
 
 ---
 
