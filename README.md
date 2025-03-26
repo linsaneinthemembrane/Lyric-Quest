@@ -13,7 +13,7 @@ This project aims to create an engaging experience for music enthusiasts by leve
 
 ## **Why I Built This Project**
 
-This is my **first JavaScript project**, and it was created as a way to learn and grow as a developer. My goals were to:
+This is my **first JavaScript project**, and it was created to learn and grow as a developer. My goals were to:
 
 - Gain hands-on experience with **Node.js** and **MongoDB**.
 - Understand how to interact with third-party APIs.
