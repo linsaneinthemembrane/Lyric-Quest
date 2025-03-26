@@ -6,6 +6,10 @@ node_modules/
 # testing
 /coverage
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6e19b231580fb114c724906023433bdaa2fccd88
 # production
 /build
 /client/build
